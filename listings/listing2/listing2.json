@@ -1,0 +1,14 @@
+{
+    "title":"35L Rolltop Backpacks",
+    "price": "170-190",
+    "link": "/listings/listing2/listing2.html",
+    "description": "This is a detailed description of Product 1.",
+    "images": [
+        "/listings/listing2/images/backView-right.png",
+        "/listings/listing2/images/backView-left.png",
+        "/listings/listing2/images/backView-straight.png",
+        "/listings/listing2/images/galaxyView.png",
+        "/listings/listing2/images/butterflyView.png",
+        "/listings/listing2/images/logoView.png",
+        "/listings/listing2/images/strapView.png"]
+}
