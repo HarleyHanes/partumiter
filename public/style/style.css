@@ -17,7 +17,7 @@ html, body {
     left: 0;
     width: 100vw;          /* Full viewport width */
     height: 100vh;         /* Full viewport height */
-    background-image: url('/photos/background/collage.png');
+    background-image: url('../photos/background/collage.png');
     background-size: cover;       /* Scales while maintaining aspect ratio */
     background-position: center;  /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */

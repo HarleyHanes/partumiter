@@ -1,12 +1,12 @@
 {
     "title": "30L Suite-Zip Backpacks",
     "price": "180-220",
-    "link": "/listings/listing1/listing1.html",
+    "link": "listings/listing1/listing1.html",
     "description": "This is a detailed description of Product 1.",
     "images": [
-      "/listings/listing1/images/FrontView.png",
-      "/listings/listing1/images/BackView.png",
-      "/listings/listing1/images/SideView.png",
-      "/listings/listing1/images/PocketView.png",
-      "/listings/listing1/images/StichingView.png"]
+      "photos/listings/listing1/FrontView.png",
+      "photos/listings/listing1/BackView.png",
+      "photos/listings/listing1/SideView.png",
+      "photos/listings/listing1/PocketView.png",
+      "photos/listings/listing1/StichingView.png"]
 }

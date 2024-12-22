@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Fetch all product JSON files
     async function loadProducts() {
-      const productFiles = ["listing1/listing1.json", "listing2/listing2.json"];
+      const productFiles = ["listings/listing1/listing1.json", "listings/listing2/listing2.json"];
       
       for (const file of productFiles) {
         try {
-          const response = await fetch(`listings/${file}`);
+          const response = await fetch(`${file}`);
           const product = await response.json();
   
           // Create listing dynamically
