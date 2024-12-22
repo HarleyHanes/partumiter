@@ -59,7 +59,69 @@ p {
 .main-content {
     padding-top: 120px; /* Adjust to header height */
 }
-/* Navigation Bar Styling */
+
+/*==================== CSS structure for Index page ====================*/
+.index-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text to the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.content-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    width: 45%;
+    margin-left: 20px;
+    text-align: center; /* Horizontally center-align the text */
+}
+
+.text h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+/*===================== CSS structure for Contact Us Page ====================*/
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text to the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.left-content {
+    width: 55%; /* Adjust the width as needed */
+    padding: 5px;
+}
+
+.right-content {
+    flex: 1; /* Ensures right content takes up available space */
+    max-width: 35%; /* Optional: Adjusts width of right content */
+    padding: 20px;
+    border: 1px solid #ddd; /* Adds border around the box */
+    background-color: #f9f9f9; /* Optional: Sets background color */
+}
+.right-content h3 {
+    margin-bottom: 10px;
+}
+
+.right-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-content ul li {
+    margin-bottom: 10px;
+}
+
+/*=======================================Navigation Bar Styling======================= */
 .navbar {
     background: #007bff; /* Blue background */
     padding: 10px 0;
@@ -118,6 +180,31 @@ p {
 
     .product-listings {
         grid-template-columns: 1fr;
+    }
+    .index-content, .contact-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align both items */
+    }
+
+    .content-image {
+        width: 80%; /* Adjust the image size on mobile */
+        margin-bottom: 20px; /* Add space between image and text */
+        order: 2; /* Ensure the image appears second on mobile */
+    }
+
+    .left-content, .right-content {
+        max-width: 100%; /* Make them take full width */
+    }
+
+    .right-content {
+        order: -1; /* Make the right content appear first on mobile */
+        margin-bottom: 20px; /* Adds space between the sections */
+    }
+
+    .text {
+        width: 80%; /* Adjust the width of the text container */
+        margin-left: 0; /* Remove left margin on mobile */
+        order: 1; /* Ensure the text appears second on mobile */
     }
 }
 
