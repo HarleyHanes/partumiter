@@ -1,3 +1,8 @@
+:root {
+    --foreground-background-color: #EDEAE0; /* Define the color as a variable */
+    --navbar-color: #008080; /* Define the color as a variable */
+  }
+
 /* Reset some basic styles */
 * {
     margin: 0;
@@ -30,7 +35,7 @@ html, body {
     position: relative;    /* This makes the header stay within the foreground */
     max-width: 800px;
     margin: 100px auto;
-    background: white;     /* Fully opaque */
+    background: var(--foreground-background-color);     /* Fully opaque */
     padding: 0 20px 20px;  /* Padding except at the top */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
@@ -50,7 +55,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
+    background: var(--foreground-background-color);
     padding: 20px 0;
     text-align: center;
     z-index: 100;           /* Ensure it stays on top */
@@ -123,7 +128,7 @@ p {
 
 /*=======================================Navigation Bar Styling======================= */
 .navbar {
-    background: #007bff; /* Blue background */
+    background: var(--navbar-color); /* Blue background */
     padding: 10px 0;
     text-align: center;
 }
@@ -146,7 +151,7 @@ p {
     color: white;
     font-weight: bold;
     padding: 10px 20px;
-    background: #007bff; /* Same as navbar background */
+    background: var(--navbar-color); /* Same as navbar background */
     border-radius: 4px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -221,7 +226,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: white;
+    background: var(--foreground-background-color);
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -275,7 +280,7 @@ p {
     font-weight: bold;
     text-decoration: none;
     color: white;
-    background: #007bff;
+    background: var(--navbar-color);
     border: none;
     border-radius: 4px;
     text-align: center;
@@ -284,7 +289,7 @@ p {
 }
 
 .product-button:hover {
-    background: #0056b3;
+    background: var(--navbar-color);
 }
 
 
@@ -407,6 +412,7 @@ textarea {
     color: #555;
     padding: 10px;
 }
+
 
 
 hPartum {
