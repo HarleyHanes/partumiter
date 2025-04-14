@@ -366,7 +366,7 @@ textarea {
     height: 100px; /* Multiple lines for order details */
     resize: none;  /* Disable resizing for consistent design */
 }
-.buy-now {
+.send-message {
     padding: 10px 20px;
     background: #007bff;
     color: white;
@@ -376,7 +376,7 @@ textarea {
     cursor: pointer;
 }
 
-.buy-now:hover {
+.send-message:hover {
     background: #0056b3;
 }
 
