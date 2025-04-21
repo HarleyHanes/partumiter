@@ -24,7 +24,7 @@
                 <label for="message">Your Message:</label><br>
                 <textarea id="message" name="message" required></textarea><br><br>
             
-                <button type="submit">Send</button>
+                <button type="submit", id = "sendButton">Send</button>
             </form>
                 
             
@@ -45,7 +45,10 @@
             
                   const email = document.getElementById('email').value;
                   const message = document.getElementById('message').value;
-            
+                  const sendButton = document.getElementById('sendButton');
+	          
+	          sendButton.disabled = true;
+
                   fetch('https://partumiter.com/send-email', {
                     method: 'POST',
                     headers: {
@@ -60,13 +63,13 @@
                     return response.json();
                   })
                   .then(data => {
-                    alert('Message sent successfully!');
-                    // Optionally reset the form
-                    document.getElementById('contactForm').reset();
+                    alert('Message sent successfully! You should see an email from us in your mailbox. If not, please confirm the email address you provided or contact us over instagram.');
+	            sendButton.textContent = "Message Sent";
                   })
                   .catch(error => {
+		    sendButton.disabled = false;
                     console.error('Error:', error);
-                    alert('Failed to send message. Please try again.');
+                    alert('Failed to send message. Please try again and contact us over instagram if the problem persists.');
                   });
                 });
             </script>
